@@ -10,7 +10,7 @@ import Products from "./components/Products";
 function App() {
   return (
     <div className="d-flex">
-    <div className='col-2'>
+    <div className='col-2 border-end m-2 border-secondary'>
     <Category/>
     <Colors/>
     <Price/>
