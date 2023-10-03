@@ -1,10 +1,10 @@
 import React from "react";
-import cat from "../db/CategoryDb";
+import Cat from "../db/CategoryDb";
 const Category = ({ handleChange }) => {
   return (
     <div>
       <h2>Category</h2>
-      {cat.map((c, i) => (
+      {Cat.map((c, i) => (
         <div class="form-check" key={i}>
           <input
             class="form-check-input"
