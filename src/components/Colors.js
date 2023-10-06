@@ -12,6 +12,7 @@ const Colors = ({ handleChange }) => {
             style={{ backgroundColor: `${c.value}`, 
             // width: "auto"
            }}
+           key={i}
           >
             <input
             className="ms-2"
