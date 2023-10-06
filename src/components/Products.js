@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Products = () => {
+const Products = ({result}) => {
+  console.log(result)
   return (
-    <div>Products</div>
+    <div className='container'>
+    <h1>Products</h1>
+  <div className='d-flex flex-wrap justify-content-around'> {result}</div>
+    </div>
   )
 }
 

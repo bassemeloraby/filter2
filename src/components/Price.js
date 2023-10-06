@@ -6,16 +6,16 @@ const Price = ({handleChange}) => {
     <div>
       <h2 className="">Price</h2>
       {Pr.map((c, i) => (
-        <div class="form-check" key={i}>
+        <div className="form-check" key={i}>
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="radio"
             name={c.value}
             id={c.value}
             onChange={handleChange}
             value={c.value}
           />
-          <label class="form-check-label" for={c.value}>
+          <label className="form-check-label" for={c.value}>
             {c.title}
           </label>
         </div>

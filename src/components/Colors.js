@@ -1,28 +1,32 @@
-import React from 'react'
-import Co from '../db/ColorsDb'
+import React from "react";
+import Co from "../db/ColorsDb";
 
-const Colors = ({handleChange}) => {
+const Colors = ({ handleChange }) => {
   return (
-    <div>Colors
-    
-    {Co.map((c, i) => (
-      <div class="form-check" key={i}>
-        <input
-          class="form-check-input"
-          type="radio"
-          name={c.value}
-          id={c.value}
-          onChange={handleChange}
-          value={c.value}
-        />
-        <label class="form-check-label" for={c.value} style={{ backgroundColor:`${c.value}`  }}>
-          {c.title}
-        </label>
+    <div>
+    <h2 className="">Colors</h2>
+      <div className="d-flex flex-column">
+        {Co.map((c, i) => (
+          <label
+            className="me-2"
+            style={{ backgroundColor: `${c.value}`, 
+            // width: "auto"
+           }}
+          >
+            <input
+            className="ms-2"
+              type="radio"
+              onChange={handleChange}
+              value={c.value}
+              name="test1"
+            />
+            <span className=""></span>
+           
+          </label>
+        ))}
       </div>
-    ))}
     </div>
+  );
+};
 
-  )
-}
-
-export default Colors
+export default Colors;
